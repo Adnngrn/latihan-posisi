@@ -27,7 +27,10 @@ body{font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-ser
     box-shadow: 1px 1px 6px black;
     z-index: 10;
     color: black;
-    text-align: right;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    /* text-align: right; */
 }
 .card:nth-of-type(2){
     background-color: rgb(203, 157, 19);
@@ -68,7 +71,12 @@ body{font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-ser
     padding-bottom: 30px;
 }
 
-.card ul li{display: inline; margin-left: 10px;}
+.card:first-of-type ul li a{
+    text-decoration: none;
+    color: black;
+}
+.card:first-of-type ul li a:hover{color: rgba(0, 0, 0, 0.543);}
+.card ul li{display: inline; margin-inline: 10px;}
 .card p{font-size: 20px;}
 
 
